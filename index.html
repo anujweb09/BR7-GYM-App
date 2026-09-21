@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#07090b">
+  <meta name="description" content="BR7 Gym — premium fitness experience in Pune.">
+  <title>BR7 GYM — Train Hard. Stay Strong.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="splash" id="splash">
+    <div class="splash-logo">BR<span>7</span></div>
+    <p>TRAIN HARD. STAY STRONG.</p>
+    <div class="loader"><i></i></div>
+  </div>
+
+  <header class="topbar">
+    <button class="icon-btn" id="backBtn" aria-label="Back">‹</button>
+    <div class="brand">BR<span>7</span></div>
+    <div class="top-actions">
+      <button class="icon-btn" id="notifyBtn" aria-label="Notifications">♢<b></b></button>
+      <button class="avatar" id="profileBtn">A</button>
+    </div>
+  </header>
+
+  <main id="app">
+    <section class="screen active" id="home">
+      <div class="hero-card">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="pill">PUNE • AMBEGAON</div>
+          <h1>STRONGER.<br><span>HEALTHIER.</span><br>HAPPIER.</h1>
+          <p>Build your best self at BR7 Gym.</p>
+          <button class="primary-btn" data-go="plans">Start Your Journey <span>→</span></button>
+        </div>
+      </div>
+
+      <div class="quick-grid">
+        <button class="quick" data-go="plans"><span>▣</span><small>Membership</small></button>
+        <button class="quick" data-go="workouts"><span>♧</span><small>Workouts</small></button>
+        <button class="quick" data-go="progress"><span>◈</span><small>Progress</small></button>
+        <button class="quick" data-go="offers"><span>◇</span><small>Offers</small></button>
+      </div>
+
+      <div class="section-head">
+        <div><small>FOR TODAY</small><h2>Today's Workout</h2></div>
+        <button class="text-btn" data-go="workouts">View all</button>
+      </div>
+      <div class="workout-feature" data-go="workouts">
+        <div>
+          <span class="orange-label">UPPER BODY • 45 MIN</span>
+          <h3>Build Strength</h3>
+          <p>5 exercises • Intermediate</p>
+          <button class="outline-btn">View Plan</button>
+        </div>
+        <div class="workout-art">💪</div>
+      </div>
+
+      <div class="section-head">
+        <div><small>BR7 COMMUNITY</small><h2>Why BR7?</h2></div>
+      </div>
+      <div class="benefits">
+        <article><span>01</span><h3>Train Smart</h3><p>Structured routines to keep your training consistent.</p></article>
+        <article><span>02</span><h3>Stay Consistent</h3><p>Track your sessions and build better habits.</p></article>
+        <article><span>03</span><h3>Feel Strong</h3><p>A focused environment for your fitness journey.</p></article>
+      </div>
+    </section>
+
+    <section class="screen" id="plans">
+      <div class="page-title"><small>MEMBERSHIP</small><h1>Choose your <span>plan.</span></h1><p>Sample prices — update these with BR7's actual plans.</p></div>
+      <div class="plans">
+        <article class="plan"><h3>Monthly</h3><strong>₹999 <em>/month</em></strong><ul><li>Full Gym Access</li><li>Workout Guidance</li><li>Member Support</li></ul><button class="primary-btn" onclick="selectPlan('Monthly')">Get Started</button></article>
+        <article class="plan featured"><label>POPULAR</label><h3>Quarterly</h3><strong>₹2,499 <em>/3 months</em></strong><ul><li>Full Gym Access</li><li>Workout Guidance</li><li>Progress Support</li><li>Better Value</li></ul><button class="primary-btn" onclick="selectPlan('Quarterly')">Get Started</button></article>
+        <article class="plan"><h3>Yearly</h3><strong>₹7,999 <em>/year</em></strong><ul><li>Full Gym Access</li><li>Workout Guidance</li><li>Progress Support</li><li>Maximum Value</li></ul><button class="primary-btn" onclick="selectPlan('Yearly')">Get Started</button></article>
+      </div>
+    </section>
+
+    <section class="screen" id="workouts">
+      <div class="page-title"><small>TRAINING</small><h1>Workout <span>plans.</span></h1><p>Choose a routine that matches your goal.</p></div>
+      <div class="filters"><button class="active">All</button><button>Strength</button><button>Fat Loss</button><button>Cardio</button></div>
+      <div class="workout-list">
+        <article><div class="exercise-icon">🏋️</div><div><span>4 WEEKS • 5 DAYS/WEEK</span><h3>Strength Training</h3><p>Build strength and muscle with a structured routine.</p></div><b>›</b></article>
+        <article><div class="exercise-icon">🔥</div><div><span>4 WEEKS • 5 DAYS/WEEK</span><h3>Fat Loss</h3><p>Combine resistance and cardio for a balanced routine.</p></div><b>›</b></article>
+        <article><div class="exercise-icon">🏃</div><div><span>4 WEEKS • 4 DAYS/WEEK</span><h3>Cardio</h3><p>Improve stamina and cardiovascular fitness.</p></div><b>›</b></article>
+        <article><div class="exercise-icon">🌱</div><div><span>4 WEEKS • 3 DAYS/WEEK</span><h3>Beginner Plan</h3><p>A simple starting point for new gym members.</p></div><b>›</b></article>
+      </div>
+    </section>
+
+    <section class="screen" id="progress">
+      <div class="page-title"><small>MY PROGRESS</small><h1>Keep <span>moving.</span></h1><p>Demo dashboard — connect a database later for real member data.</p></div>
+      <div class="progress-card"><div class="ring"><strong>78%</strong><small>GOAL</small></div><div class="metrics"><div><b>18</b><span>Day Streak</span></div><div><b>12</b><span>Workouts</span></div><div><b>4</b><span>Weeks</span></div></div></div>
+      <div class="chart"><div class="chart-head"><h3>Workout consistency</h3><span>Last 4 weeks</span></div><div class="bars"><i style="height:52%"></i><i style="height:76%"></i><i style="height:64%"></i><i style="height:88%"></i><i style="height:72%"></i><i style="height:94%"></i></div></div>
+      <div class="quote-card">🏆 <div><b>Consistency builds real results.</b><p>Keep showing up and keep improving.</p></div></div>
+    </section>
+
+    <section class="screen" id="offers">
+      <div class="page-title"><small>BR7 UPDATES</small><h1>Offers & <span>news.</span></h1></div>
+      <div class="offer-banner"><small>SPECIAL OFFER</small><h2>Get 20% OFF</h2><p>On selected annual memberships.</p><button class="primary-btn" onclick="showToast('Offer selected — contact BR7 to confirm availability.')">View Offer</button></div>
+      <div class="news"><article><span>NEW</span><h3>New equipment added</h3><p>Experience the latest fitness equipment at BR7 Gym.</p></article><article><span>CHALLENGE</span><h3>Weekend Fitness Challenge</h3><p>Join the community and stay active.</p></article><article><span>NOTICE</span><h3>Gym updates</h3><p>Check this section for timings and announcements.</p></article></div>
+    </section>
+
+    <section class="screen" id="profile">
+      <div class="profile-card"><div class="profile-avatar">A</div><h1>Anuj Mane</h1><p>BR7 Member • Demo Profile</p></div>
+      <div class="menu-list">
+        <button>👤 Personal Details <span>›</span></button>
+        <button data-go="plans">💳 Membership <span>›</span></button>
+        <button data-go="workouts">🏋️ Workout History <span>›</span></button>
+        <button>🧾 Payment History <span>›</span></button>
+        <button>🔔 Notifications <span>›</span></button>
+        <button data-go="location">📍 Help & Location <span>›</span></button>
+      </div>
+    </section>
+
+    <section class="screen" id="location">
+      <div class="page-title"><small>FIND BR7</small><h1>Visit <span>BR7 Gym.</span></h1></div>
+      <div class="map-placeholder">📍<strong>BR7 GYM</strong><small>Ambegaon Budruk, Pune</small></div>
+      <div class="address"><h3>BR7 Gym</h3><p>BELDARE PATIL PROPERTIES,<br>Venkateshwara Pearl, 3rd Floor,<br>Jambhulwadi Road, Dattanagar,<br>Ambegaon Budruk, Pune.</p></div>
+      <div class="contact-row">
+        <a href="https://www.google.com/maps/search/?api=1&query=BR7+Gym+Jambhulwadi+Road+Dattanagar+Pune" target="_blank" class="primary-btn">📍 Open Maps</a>
+        <a href="https://wa.me/?text=Hello%20BR7%20Gym%2C%20I%20want%20to%20know%20about%20membership." target="_blank" class="whatsapp">WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="nav-item active" data-go="home"><span>⌂</span>Home</button>
+    <button class="nav-item" data-go="workouts"><span>♧</span>Workout</button>
+    <button class="nav-item" data-go="plans"><span>▣</span>Plans</button>
+    <button class="nav-item" data-go="progress"><span>◈</span>Progress</button>
+    <button class="nav-item" data-go="profile"><span>●</span>Profile</button>
+  </nav>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
